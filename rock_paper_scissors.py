@@ -41,14 +41,11 @@ elif choice == "PAPER":
 else:
     user_selection = scissors_selection
 print(f"User Selection: {user_selection}")
-#I already added the asci art
-#I already created the user prompt along with the 
-# the computer will randomly pull from a list that includes Rock,Paper,Scissors.
+
 game_options = [rock_selection, paper_selection, scissors_selection]
 computer_selection = random.choice(game_options)
 print(f"Computer Selection: {computer_selection}")
 
-# help(random)
 match_result = ""
 if computer_selection == rock_selection and user_selection == rock_selection:
     match_result = "MATCH RESULT: TIE"
